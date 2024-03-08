@@ -16,7 +16,7 @@ local function make_buffer(session)
     new_window = new_window -- make lsp happy
 
     vim.cmd('vertical resize ' .. math.floor(vim.o.columns * 0.2))
-    vim.cmd('resize ' .. math.floor(vim.o.lines * 0.2))
+    -- vim.cmd('resize ' .. math.floor(vim.o.lines * 0.2))
     vim.o.number = false
     vim.o.relativenumber = false
 
