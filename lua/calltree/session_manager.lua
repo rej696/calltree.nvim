@@ -10,7 +10,7 @@ local function make_buffer(session)
     local current_layout = vim.api.nvim_get_current_tabpage()
     local cursor_pos = vim.api.nvim_win_get_cursor(0)
 
-    vim.cmd('botright new')
+    vim.cmd('topleft vnew')
 
     local new_window = vim.api.nvim_get_current_win()
     new_window = new_window -- make lsp happy
